@@ -23,7 +23,7 @@ const MainNav = (props) => {
                     <span className={classes.bar}></span>
                     {sideMenu &&
                         <ul>
-                            <li><a href="https://kredytomat.pl/">Kredyty gotówkowe</a></li>
+                            <li><Link href="/">Kredyty gotówkowe</Link></li>
                             <li><a href="https://kredytomat.pl/kredyty-konsolidacyjne">Kredyty konsolidacyjne</a></li>
                             <li><a href="https://kredytomat.pl/kredyty-hipoteczne">Kredyty hipoteczne</a></li>
                             <li><a href="https://kredytomat.pl/kontakt">Kontakt</a></li>
