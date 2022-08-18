@@ -263,7 +263,7 @@
     display: none;
   }
 
-  .content span {
+  .image {
     top: 21px;
     height: 20px;
     width: 45px;
@@ -325,8 +325,10 @@
     display: none;
   }
 
-  .content span {
+  .image {
     top: 10px;
+    width: 112px;
+    height: 40px;
   }
 }
 
@@ -432,6 +434,11 @@
     left: 16px;
     display: -webkit-box;
     display: flex;
+  }
+
+  .image {
+    width: 112px;
+    height: 40px;
   }
 }
 

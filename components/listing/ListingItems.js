@@ -14,7 +14,7 @@ const ListingItems = (props) => {
                     <span className={classes.rank}>{props.num}</span>
                 </div>
                 <div className={`${classes.content} ${classes.content__mortage}`}>
-                    <Link className={classes.logo} href='/'><Image src={props.image} alt={props.title} height={'40px'} width={'112px'} /></Link>
+                    <Link className={classes.logo} href='/'><Image src={props.image} alt={props.title} className={classes.image} /></Link>
                     <div className={classes.items}>
                         <div className={classes.items_slides}>
                             <div className={classes.item_slide}>
