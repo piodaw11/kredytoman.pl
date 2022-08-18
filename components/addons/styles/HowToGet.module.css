@@ -1,0 +1,127 @@
+.items {
+  margin-bottom: 28px;
+  display: -webkit-box;
+  display: flex;
+}
+
+.items .number {
+  display: none;
+}
+
+.items p:last-of-type {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.item_title {
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .item_title {
+    color: #fff;
+  }
+  .items p:last-of-type {
+    color: rgb(212, 212, 212);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .item_title {
+    color: #333;
+  }
+  .items p:last-of-type {
+    color: #666;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 11990px) {
+  .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .items svg {
+    height: 48px;
+    color: #0cbd68;
+  }
+
+  .items > div {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .HowToGet {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 20%;
+    padding-right: 30px;
+  }
+
+  .items .number {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    display: block;
+    background: #0cbd68;
+    border-radius: 2px;
+    width: 27px;
+    height: 27px;
+    color: #fff;
+    text-align: center;
+    margin-right: 12px;
+  }
+
+  .items p {
+    padding-right: 8px;
+    padding-left: 40px;
+  }
+
+  .items p.item_title {
+    font-size: 16px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .items > div {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .items svg {
+    margin-bottom: 20px;
+    margin-right: 0;
+    height: 60px;
+    min-width: 60px;
+    color: #0cbd68;
+    transition: all 0.2s;
+  }
+
+  .items svg:hover {
+    transform: scale(1.2);
+  }
+}

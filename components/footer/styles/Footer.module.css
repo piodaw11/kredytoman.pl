@@ -1,0 +1,165 @@
+.footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+footer .container_footer {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.footer ul:first-of-type {
+  margin-right: 16px;
+}
+
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 26px;
+}
+
+.footer ul li:first-of-type {
+  margin-bottom: 10px;
+}
+
+.footer ul li:first-of-type p {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.footer ul li a {
+  font-size: 13px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.copyright {
+  text-align: start;
+  color: #666;
+  position: relative;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.container ul li p {
+  cursor: default;
+}
+
+.container ul:first-of-type,
+.container ul:last-of-type {
+  width: 25%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footerlogo {
+  width: 50%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: 1fr 1fr;
+}
+
+.footerlogo ul:first-of-type,
+.footerlogo ul:nth-child(2) {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column-end: span 2;
+}
+
+.footerlogo ul:last-of-type {
+  display: grid;
+  grid-column-start: span 4;
+}
+
+.hr {
+  margin-top: 4rem;
+  border: 0;
+  border-top: 3px solid #ddd;
+}
+
+.hr_bottom {
+  border: 0;
+  border-top: 2px solid #e6e9ef;
+}
+
+@media (prefer-color-scheme: dark) {
+  .title {
+    color: #fff;
+  }
+  .footers li a {
+    color: rgb(212, 212, 212);
+  }
+}
+
+@media (prefer-color-scheme: light) {
+  .title {
+    color: #666;
+  }
+  .footers li a {
+    color: #333;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1199px) {
+  .hr,
+  .footer {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .container {
+    max-width: 960px;
+  }
+
+  .container_footer {
+    flex-wrap: nowrap;
+    -webkit-box-pack: unset;
+    justify-content: unset;
+  }
+
+  .container_footer ul {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px !important;
+  }
+}

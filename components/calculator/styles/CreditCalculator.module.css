@@ -1,0 +1,298 @@
+.header {
+  background-color: #f7f9fc;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+  display: flex;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.tittleh1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.titlep1 {
+  font-size: 12px;
+  line-height: 150%;
+  color: #464646;
+  margin-bottom: 8px;
+}
+
+form.creditForm > div {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+form.creditForm label {
+  font-weight: 500;
+  color: #333;
+  margin-right: 4px;
+}
+
+form.creditForm .input {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  width: calc(100% - 90px);
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+}
+
+form.creditForm button {
+  height: 44px;
+  width: 44px;
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 4px rgb(0 0 0 / 5%);
+  border-radius: 2px;
+  color: #666;
+  font-size: 24px;
+  outline: 0;
+  -webkit-box-align: center;
+  align-items: center;
+  font-family: inherit;
+}
+
+form.creditForm button[type="submit"],
+form.creditForm input {
+  box-shadow: 1px 1px 4px rgb(0 0 0 / 5%);
+  font-size: 16px;
+  font-family: inherit;
+}
+
+form.creditForm .inputDesc {
+  display: none;
+}
+
+.input input::-webkit-outer-spin-button,
+.input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form.creditForm button[type="submit"] {
+  background: #0cbd68;
+  border-radius: 2px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 18px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 2px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border: none;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 5%;
+  font-size: 26px;
+  margin-left: 10px;
+}
+
+form.creditForm button[type="submit"]:hover {
+  transform: scale(1.03);
+}
+
+form.creditForm input {
+  height: 44px;
+  box-sizing: border-box;
+  border: 1px solid #e4e4e4;
+  border-left: 0;
+  border-right: 0;
+  text-align: center;
+  font-weight: 500;
+  line-height: 24px;
+  width: inherit;
+  max-width: 150px;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.sticky {
+  z-index: 10;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: 0 5px 10px rgb(15 22 48 / 10%);
+  top: 0;
+}
+
+.inputs:focus {
+  outline: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .header,
+  .inputs,
+  form.creditForm button[type="button"] {
+    background-color: #464646;
+    color: #fff;
+  }
+  .tittleh1,
+  .titlep1,
+  form.creditForm label {
+    color: #fff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  form.creditForm input {
+    background-color: #fff;
+    color: #333;
+  }
+}
+
+@media (min-width: 320px) and (min-width: 575px) {
+  form.creditForm .input {
+    width: calc(100% - 100px);
+  }
+}
+
+@media (min-width: 576px) {
+  .header {
+    padding-bottom: 12px;
+  }
+  .container {
+    max-width: 540px;
+  }
+  form.creditForm {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+  form.creditForm > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    width: 48%;
+  }
+  form.creditForm label {
+    margin-right: 0;
+  }
+  form.creditForm .input {
+    width: 100%;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  form.creditForm .input input[type="text"] {
+    max-width: 240px;
+  }
+
+  .sticky {
+    position: sticky;
+  }
+}
+@media (min-width: 992px) {
+  .container > div {
+    display: -webkit-box;
+    display: flex;
+  }
+  .container {
+    max-width: 960px;
+  }
+  header .title {
+    width: 30%;
+  }
+  .tittleh1 {
+    font-size: 26px;
+    line-height: 35px;
+    margin-bottom: 12px;
+  }
+  .titlep1 {
+    margin-bottom: 0;
+  }
+  form.creditForm {
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  form.creditForm > div {
+    margin-bottom: 0;
+    width: 100%;
+    margin-right: 8px;
+  }
+  form.creditForm label {
+    margin-bottom: 6px;
+  }
+
+  form.creditForm .input {
+    margin-bottom: 5px;
+  }
+
+  form.creditForm .input input[type="text"] {
+    max-width: 150px;
+  }
+
+  form.creditForm .inputDesc {
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    color: #464646;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px !important;
+  }
+  header .title {
+    margin-right: 80px;
+  }
+  form.creditForm {
+    width: 100%;
+  }
+
+  form.creditForm button[type="button"] {
+    width: 54px;
+    height: 50px;
+  }
+
+  form.creditForm .input input[type="text"] {
+    font-size: 22px;
+  }
+
+  form.creditForm input,
+  form.creditForm button[type="submit"] {
+    height: 50px;
+  }
+}

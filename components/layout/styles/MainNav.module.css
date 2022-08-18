@@ -1,0 +1,209 @@
+.navbar {
+  display: flex;
+  height: 62px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin: 0 auto 0 auto;
+  padding: 0 15px 0 15px;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo a {
+  display: flex;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logo span {
+  display: none;
+}
+
+.menu {
+  display: block;
+  position: relative;
+  z-index: 11;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 6px;
+}
+
+.menu input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+.menu span {
+  display: block;
+  width: 33px;
+  height: 3px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #363636;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0;
+  transform-origin: 4px 0;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease,
+    -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.menu span:nth-last-child(2) {
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+
+.menu ul {
+  position: absolute;
+  top: 42px;
+  height: 100vh;
+  width: 250px;
+  margin: 0 0 0 -452px;
+  padding-right: 18px;
+  padding-top: 34px;
+  padding-left: 64px;
+  background: #fff;
+  list-style-type: none;
+  box-shadow: 0 20px 18px rgb(0 0 0 / 18%);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+}
+
+.menu ul {
+  -webkit-font-smoothing: antialiased;
+}
+
+.menu li {
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 14px;
+  position: relative;
+}
+
+.menu__info {
+  display: none;
+}
+
+.menu__info ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo a {
+    color: #fff;
+  }
+  .logo span {
+    color: rgb(212, 212, 212);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .logo span {
+    color: #666;
+  }
+}
+
+@media (min-width: 320px) {
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 367px) {
+  .menu ul {
+    margin: 0 0 0 -449px;
+  }
+}
+
+@media (min-width: 576px) {
+  .navbar {
+    max-width: 540px !important;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo a {
+    margin-right: 26px;
+  }
+  .menu {
+    display: none;
+  }
+  .menu__info {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  .menu__info ul li {
+    margin-right: 16px;
+  }
+  .menu__info ul a {
+    font-size: 13px;
+    line-height: 19px;
+    color: #363636;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .logo span {
+    display: block;
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    max-width: 720px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    max-width: 960px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    max-width: 1140px !important;
+  }
+}
