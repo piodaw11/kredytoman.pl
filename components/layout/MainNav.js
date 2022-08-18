@@ -24,11 +24,15 @@ const MainNav = (props) => {
                     {sideMenu &&
                         <ul>
                             <li><Link href="/">Kredyty gotówkowe</Link></li>
-                            <li><a href="https://kredytomat.pl/kredyty-konsolidacyjne">Kredyty konsolidacyjne</a></li>
-                            <li><a href="https://kredytomat.pl/kredyty-hipoteczne">Kredyty hipoteczne</a></li>
-                            <li><a href="https://kredytomat.pl/kontakt">Kontakt</a></li>
-                            <li><a href="https://kredytomat.pl/regulamin">Regulamin</a></li>
-                            <li><a href="https://kredytomat.pl/polityka-prywatnosci">Polityka prywatności</a></li>
+                            <li><Link href="/kredyty-konsolidacyjne">Kredyty konsolidacyjne</Link></li>
+                            <li><Link href="/kredyty-hipoteczne">Kredyty hipoteczne</Link></li>
+                            <hr />
+                            <li><Link href="/pozyczki">Pożyczki</Link></li>
+                            <li><Link href='/pozyczki-bik'>Pożyczki bez bik</Link></li>
+                            <hr />
+                            <li><Link href="/chwilowki">Chwilówki</Link></li>
+                            <li><Link href="/chwilowki-bik">Chwilówki bez bik</Link></li>
+                            {/* <li><Link href="/kontakt">Kontakt</Link></li> */}
                         </ul>
                     }
                 </div>
