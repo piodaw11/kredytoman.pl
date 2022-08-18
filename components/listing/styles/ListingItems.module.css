@@ -225,7 +225,7 @@
   }
 
   .listing__item:nth-child(2) {
-    margin-left: 50px;
+    margin-left: 20px;
   }
 
   .item_slide:last-of-type {
@@ -256,17 +256,17 @@
     width: 90%;
     position: absolute;
     bottom: 4px;
-    left: 24px;
+    left: 15px;
   }
 
   .footer {
     display: none;
   }
 
-  .image {
-    top: 21px;
-    height: 20px;
-    width: 45px;
+  .content span {
+    top: 19px;
+    height: 25px !important;
+    width: 45px !important;
   }
 }
 
@@ -318,17 +318,15 @@
     width: 90%;
     position: absolute;
     bottom: 4px;
-    left: 34px;
+    left: 24px;
   }
 
   .footer {
     display: none;
   }
 
-  .image {
+  .content span {
     top: 10px;
-    width: 112px;
-    height: 40px;
   }
 }
 
@@ -434,11 +432,6 @@
     left: 16px;
     display: -webkit-box;
     display: flex;
-  }
-
-  .image {
-    width: 112px;
-    height: 40px;
   }
 }
 
