@@ -1,4 +1,5 @@
 import { MongoClient } from "mongodb";
+import Head from "next/head";
 
 import MainNav from "../../components/layout/MainNav";
 import Listing from "../../components/listing/Listing";
@@ -8,6 +9,12 @@ import Footer from "../../components/footer/Footer";
 const PozyczkiBik = (props) => {
     return (
         <>
+            <Head>
+                <title>Kredytomat.pl - Ranking pożyczek bez bik</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta name="description" content="Niezależny ranking najlepszych ofert pożyczek bez sprawdzania baz bik" />
+                <link rel='icon' href='/images/favicon.ico' />
+            </Head>
             <MainNav />
             <Listing offers={props.offers} />
             <Addons />

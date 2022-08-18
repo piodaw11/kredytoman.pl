@@ -1,4 +1,5 @@
 import { MongoClient } from "mongodb";
+import Head from "next/head";
 
 import MainNav from "../../components/layout/MainNav";
 import Listing from "../../components/listing/Listing";
@@ -9,6 +10,12 @@ import Footer from "../../components/footer/Footer";
 const KredytyHipoteczne = (props) => {
     return (
         <>
+            <Head>
+                <title>Kredytomat.pl - Ranking kredytów hipotecznych</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta name="description" content="Niezależny ranking najlepszych ofert na kredyty hipoteczne" />
+                <link rel='icon' href='/images/favicon.ico' />
+            </Head>
             <MainNav />
             <Listing offers={props.offers} />
             <Addons />

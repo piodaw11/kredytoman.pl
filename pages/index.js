@@ -1,4 +1,5 @@
 import { MongoClient } from "mongodb";
+import Head from "next/head";
 import Addons from "../components/addons/addons";
 import Footer from "../components/footer/Footer";
 
@@ -8,6 +9,12 @@ import Listing from "../components/listing/Listing";
 const Home = (props) => {
   return (
     <>
+      <Head>
+        <title>Kredytomat.pl - Ranking kredytów gotówkowych</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Niezależny ranking najlepszych ofert na kredyty gotówkowe" />
+        <link rel='icon' href='/images/favicon.ico' />
+      </Head>
       <MainNav />
       <Listing offers={props.offers} />
       <Addons />
