@@ -10,7 +10,7 @@ const KredytyKonsolidacyjne = (props) => {
     return (
         <>
             <Head>
-                <title>Kredytomat.pl - Ranking kredytów konsolidacyjnych</title>
+                <title>Kredytoman.pl - Ranking kredytów konsolidacyjnych</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <meta name="description" content="Niezależny ranking najlepszych ofert na uwolnienie się od długów dzięki kredytom konsolidacyjnym" />
                 <link rel='icon' href='/images/favicon.ico' />

@@ -10,7 +10,7 @@ const Chwilowki = (props) => {
     return (
         <>
             <Head>
-                <title>Kredytomat.pl - Raning chwilówek</title>
+                <title>Kredytoman.pl - Raning chwilówek</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <meta name="description" content="Niezależny ranking najlepszych ofert na chwilówki" />
                 <link rel='icon' href='/images/favicon.ico' />

@@ -10,7 +10,7 @@ const ChwilowkiBik = (props) => {
     return (
         <>
             <Head>
-                <title>Kredytomat.pl - Ranking chwilówek bez bik</title>
+                <title>Kredytoman.pl - Ranking chwilówek bez bik</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <meta name="description" content="Niezależny ranking chwilówek bez sprawdzania baz bik" />
                 <link rel='icon' href='/images/favicon.ico' />

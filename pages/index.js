@@ -10,7 +10,7 @@ const Home = (props) => {
   return (
     <>
       <Head>
-        <title>Kredytomat.pl - Ranking kredytów gotówkowych</title>
+        <title>Kredytoman.pl - Ranking kredytów gotówkowych</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Niezależny ranking najlepszych ofert na kredyty gotówkowe" />
         <link rel='icon' href='/images/favicon.ico' />
