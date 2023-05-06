@@ -13,6 +13,7 @@ const Home = (props) => {
         <title>Kredytoman.pl - Ranking kredytów gotówkowych</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Niezależny ranking najlepszych ofert na kredyty gotówkowe" />
+        <meta name="mylead-verification" content="2ccbc09dbd5296aecb4b9e3afb570962" />
         <link rel='icon' href='/images/favicon.ico' />
       </Head>
       <MainNav />
